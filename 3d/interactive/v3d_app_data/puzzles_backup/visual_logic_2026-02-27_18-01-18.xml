@@ -1,0 +1,84 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
+  <tab name="startBtn" type="CommonTab" active="false" scrollx="20.00000000000091" scrolly="-567" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="?tKMOhy,]K/O/h~8($1H" x="230" y="630">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="WRXa,:?8xMTrFPs}+Ebh">
+          <field name="TEXT">startBtn</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="playAnimationAdv" id="IWhXuMfjHrg0q8|0K6PI">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+          <field name="REVERSED">FALSE</field>
+          <field name="LOOP">LoopOnce</field>
+          <value name="VALUE">
+            <shadow type="animationList" id="ZJu[8eg|tvcQM:P;O].u">
+              <field name="FIELDNAME">Sphere</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="stopBtn" type="CommonTab" active="false" scrollx="39.99999999999977" scrolly="-270" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="chq6/H/*HLVr6}#rltPa" x="290" y="530">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="h)M66+FCM4xHvX2?U9k_">
+          <field name="TEXT">stopBtn</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="stopAnimation" id="7?v!-ukw6H.KmG:^/^rq">
+          <value name="VALUE">
+            <shadow type="animationList" id="d_zmAdgFT8tC}R9^$+;C">
+              <field name="FIELDNAME">Sphere</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <tab name="colorBtn" type="CommonTab" active="true" scrollx="-111" scrolly="60.00000000000006" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="grCsX$5pkJ-1=xN9D)*F" x="290" y="270">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="l|X@ZUC|EZ2moNT,+fn~">
+          <field name="TEXT">colorBtn</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="setMaterialColor" id="]nF!LNRP{SKMfR[vtoFb">
+          <mutation xmlns="http://www.w3.org/1999/xhtml" flexcolinput="false" usecsscolor="false"></mutation>
+          <field name="MAT_COL_NAME">Principled BSDF Color</field>
+          <value name="MATERIAL">
+            <shadow type="materialList" id="kRI/^Je?pEg$f$g)WZ/Q">
+              <field name="FIELDNAME">Material</field>
+            </shadow>
+          </value>
+          <value name="R">
+            <shadow type="math_number" id="#kJZWPHkGaq2@uGkI:C.">
+              <field name="NUM">0.5</field>
+            </shadow>
+          </value>
+          <value name="G">
+            <shadow type="math_number" id="wHIJi}dW!gq?y:!Jk(!q">
+              <field name="NUM">0.5</field>
+            </shadow>
+          </value>
+          <value name="B">
+            <shadow type="math_number" id="Jtj3Z:Z6V+i:aB{F)VwW">
+              <field name="NUM">0.5</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1134" viewport-y="37" viewport-w="768" viewport-h="455.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>

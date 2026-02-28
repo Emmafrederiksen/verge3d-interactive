@@ -1,0 +1,58 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="Init" type="InitTab" active="false" scrollx="20" scrolly="0" scale="0.9"></tab>
+  <tab name="Rotation" type="CommonTab" active="true" scrollx="20.000000000000682" scrolly="-189" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="whenClicked" id="6=dd=p-unbkao|B/Xc|R" inline="false" x="250" y="390">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" adveventoptions="false" enableifmissed="false" useid="false"></mutation>
+      <field name="X_RAY">FALSE</field>
+      <field name="DOUBLE_CLICK">FALSE</field>
+      <field name="LEFT_BUTTON">TRUE</field>
+      <field name="MIDDLE_BUTTON">TRUE</field>
+      <field name="RIGHT_BUTTON">TRUE</field>
+      <value name="VALUE">
+        <shadow type="objectList" id=";L:$@Y_B/oQNM,@c5^K!">
+          <field name="FIELDNAME">Sphere</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="playAnimationAdv" id="IWhXuMfjHrg0q8|0K6PI" x="390" y="550">
+      <mutation xmlns="http://www.w3.org/1999/xhtml" advplaybackoptions="false" enablewhenfinished="false"></mutation>
+      <field name="REVERSED">FALSE</field>
+      <field name="LOOP">LoopOnce</field>
+      <value name="VALUE">
+        <shadow type="animationList" id="ZJu[8eg|tvcQM:P;O].u">
+          <field name="FIELDNAME">Sphere</field>
+        </shadow>
+      </value>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="?tKMOhy,]K/O/h~8($1H" x="230" y="630">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="WRXa,:?8xMTrFPs}+Ebh">
+          <field name="TEXT">startBtn</field>
+        </shadow>
+      </value>
+    </block>
+  </tab>
+  <tab name="StopRotation" type="CommonTab" active="false" scrollx="45.99999999999977" scrolly="10.999999999999943" scale="0.9">
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="chq6/H/*HLVr6}#rltPa" x="190" y="290">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="h)M66+FCM4xHvX2?U9k_">
+          <field name="TEXT">stopBtn</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="stopAnimation" id="7?v!-ukw6H.KmG:^/^rq">
+          <value name="VALUE">
+            <shadow type="animationList" id="d_zmAdgFT8tC}R9^$+;C">
+              <field name="FIELDNAME">Sphere</field>
+            </shadow>
+          </value>
+        </block>
+      </statement>
+    </block>
+  </tab>
+  <editorsettings viewport-x="1134" viewport-y="37" viewport-w="768" viewport-h="455.5" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
